@@ -90,6 +90,10 @@ module ActiveMerchant #:nodoc:
       class_attribute :supported_cardtypes
       self.supported_cardtypes = []
 
+      # Indicates if the gateway supports 3D Secure authentication or not
+      class_attribute :supports_3d_secure
+      self.supports_3d_secure = false
+
       class_attribute :homepage_url
       class_attribute :display_name
 
